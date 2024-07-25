@@ -1,16 +1,16 @@
-import random
-def num_guessing_game():
-    secret_number = random.randint(1, 100)
-    attempts = 0
-    while True:
-        guess = int(input("Guess a number between 1 and 100: "))
-        attempts += 1
-        if guess == secret_number:
-            print(f"Congratulations! You guessed the number {secret_number} in {attempts} attempts.")
-            break
-        elif guess < secret_number:
-            print("Higher")
-        else:
-            print("Lower")
+Number Guessing Game
+Description:
+-This Python script implements a simple number guessing game. The computer generates a random number between 1 and 100, and the player tries 
+ to guess it. The game provides feedback on whether the guess is too high or too low.
 
-num_guessing_game()
+How to Play:
+
+-Run the Python script.
+-The game will prompt you to guess a number between 1 and 100.
+-Enter your guess and press Enter.
+-The game will provide feedback on whether your guess is correct, too high, or too low.
+-Continue guessing until you correctly guess the number.
+
+Dependencies:
+-Python 3.x
+-random module
